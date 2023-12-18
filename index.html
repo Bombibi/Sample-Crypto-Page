@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwiftCoin</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- BOXICONs CDN -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-components">
+        <img src="./images/coins-solid.svg" alt="Logo" />
+
+        <div class="components">
+          <a href="#"
+            ><img
+              src="./images/right-left-solid.svg"
+              alt="market-logo"
+            />Market</a
+          >
+
+          <a href="#"
+            ><img
+              src="./images/retweet-solid.svg"
+              alt="referral-logo"
+            />Referral</a
+          >
+
+          <a href="#"
+            ><img
+              src="./images/circle-info-solid.svg"
+              alt="info-logo"
+            />Resources</a
+          >
+        </div>
+      </div>
+      <div class="user-components">
+        <img src="./images/message-solid.svg" alt="" />
+        <img src="./images/bell-regular.svg" alt="" />
+        <img src="./images/user-solid.svg" alt="" />
+        <p>User-Name</p>
+        <div class="drop-down-lang">
+          <p>
+            <span id="selectedLanguage">EN</span>
+            <img class="arrow-img" src="./images/caret-down-solid.svg" alt="" />
+          </p>
+          <div class="drop-down-menu">
+            <a href="#" data-lang="CN">CN</a>
+            <a href="#" data-lang="BM">BM</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <aside>
+        <div class="side-bar-menu">
+          <li>
+            <div class="icon-link">
+              <a href="#">
+                <i class="bx bx-wallet"></i>
+                <span class="link_name">Wallet</span>
+              </a>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu close">
+              <li><a href="#">Bot Transfer</a></li>
+              <hr />
+              <li><a href="#">Wallet Transfer</a></li>
+              <hr />
+              <li><a href="#">Withdrawal</a></li>
+              <hr />
+            </ul>
+          </li>
+          <li>
+            <div class="icon-link">
+              <a href="#">
+                <i class="bx bx-bot"></i>
+                <span class="link_name">Bot</span>
+              </a>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a href="#">API Management</a></li>
+              <hr />
+              <li><a href="#">Open Bot</a></li>
+              <hr />
+              <li><a href="#">Portfolio</a></li>
+              <hr />
+              <li><a href="#">Performance</a></li>
+              <hr />
+              <li><a href="#">Demo Account</a></li>
+              <hr />
+              <li><a href="#">More...</a></li>
+              <hr />
+            </ul>
+          </li>
+          <li>
+            <div class="icon-link">
+              <a href="#">
+                <i class="bx bx-collection"></i>
+                <span class="link_name">Gateway</span>
+              </a>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a href="#">Order</a></li>
+              <hr />
+              <li><a href="#">Withdrawal API Request</a></li>
+              <hr />
+              <li><a href="#">API Setup</a></li>
+              <hr />
+              <li><a href="#">Gas Wallet</a></li>
+              <hr />
+              <li><a href="#">More...</a></li>
+              <hr />
+            </ul>
+          </li>
+        </div>
+      </aside>
+      <section class="main-section">
+        <section class="trending-coin">
+          <p>Trending coin</p>
+          <div class="coins-container">
+            <div class="coin">
+              <img src="./images/ethereum.jpeg" alt="" />
+            </div>
+            <div class="coin">
+              <img src="./images/litecoin.png" alt="" />
+            </div>
+            <div class="coin">
+              <img src="./images/ripple.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="reference">
+          <p>Reference</p>
+          <img src="./images/reference.png" alt="" />
+        </section>
+        <section class="market-info">
+          <div class="info-top">
+            <div class="portfolio">
+              <p>Portfolio</p>
+              <!-- <i class="bx bx-candles"></i> -->
+              <p>$20,000.00 <span>+4.1%</span></p>
+            </div>
+            <div class="actions">
+              <div class="transfer">
+                <i class="bx bx-transfer"></i>
+                <button>Transfer</button>
+              </div>
+              <div class="deposit">
+                <i class="bx bxs-download"></i>
+                <button>Deposit</button>
+              </div>
+              <div class="send">
+                <i class="bx bx-mail-send"></i>
+                <button>Send</button>
+              </div>
+            </div>
+            <div class="transactions">
+              <p>Recent Transactions</p>
+              <div class="transaction">
+                <div>
+                  <p class="coin-name">ADA</p>
+                  <p class="date">6 Dec, 2021</p>
+                </div>
+                <div class="amount">
+                  <p class="negative">-$380.50</p>
+                </div>
+              </div>
+              <hr />
+              <div class="transaction">
+                <div>
+                  <p class="coin-name">LINA</p>
+                  <p class="date">4 Nov, 2021</p>
+                </div>
+                <div class="amount">
+                  <p class="negative">-$150.50</p>
+                </div>
+              </div>
+              <hr />
+              <div class="transaction">
+                <div>
+                  <p class="coin-name">TOMO</p>
+                  <p class="date">3 Nov, 2021</p>
+                </div>
+                <div class="amount">
+                  <p class="positive">+$456.90</p>
+                </div>
+              </div>
+              <hr />
+              <div class="transaction">
+                <div>
+                  <p class="coin-name">LINA</p>
+                  <p class="date">6 Dec, 2021</p>
+                </div>
+                <div class="amount">
+                  <p class="negative">-$380.50</p>
+                </div>
+              </div>
+              <hr />
+              <div class="transaction">
+                <div>
+                  <p class="coin-name">CFX</p>
+                  <p class="date">27 Dec, 2021</p>
+                </div>
+                <div class="amount">
+                  <p class="positive">+$986.50</p>
+                </div>
+              </div>
+              <hr />
+              <div class="transaction">
+                <div>
+                  <p class="coin-name">LINA</p>
+                  <p class="date">15 Nov, 2021</p>
+                </div>
+                <div class="amount">
+                  <p class="positive">+$380.50</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-btm">
+            <p>Market Info</p>
+            <div class="coins-info">
+              <div class="market-coin">
+                <p>BTC</p>
+                <p class="desc">BUY</p>
+              </div>
+              <div class="amount-detail">
+                <p>$57,386.09</p>
+                <p class="negative"><i class="bx bx-chevron-down"></i>3.38%</p>
+              </div>
+            </div>
+            <hr />
+            <div class="coins-info">
+              <div class="market-coin">
+                <p>ETH</p>
+                <p class="desc">BUY</p>
+              </div>
+              <div class="amount-detail">
+                <p>$4,156.09</p>
+                <p class="negative"><i class="bx bx-chevron-down"></i>1.08%</p>
+              </div>
+            </div>
+            <hr />
+            <div class="coins-info">
+              <div class="market-coin">
+                <p>BNB</p>
+                <p class="desc">BUY</p>
+              </div>
+              <div class="amount-detail">
+                <p>$562.89</p>
+                <p class="negative"><i class="bx bx-chevron-down"></i>0.08%</p>
+              </div>
+            </div>
+            <hr />
+            <div class="coins-info">
+              <div class="market-coin">
+                <p>USDT</p>
+                <p class="desc">BUY</p>
+              </div>
+              <div class="amount-detail">
+                <p>$100.09</p>
+                <p class="positive"><i class="bx bx-chevron-up"></i>2.51%</p>
+              </div>
+            </div>
+            <hr />
+            <div class="coins-info">
+              <div class="market-coin">
+                <p>ADA</p>
+                <p class="desc">BUY</p>
+              </div>
+              <div class="amount-detail">
+                <p>$1.82</p>
+                <p class="positive"><i class="bx bx-chevron-up"></i>1.23%</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="script.js" charset="UTF-8"></script>
+  </body>
+</html>
